@@ -9,6 +9,7 @@ import {
   Sparkles,
   Video,
 } from 'lucide-react';
+import { Typewriter } from '@/components/ui/typewriter';
 
 const whatsappLink =
   'https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.';
@@ -53,7 +54,7 @@ export default function Home() {
         <div className="hero-orb hero-orb--one" /><div className="hero-orb hero-orb--two" />
         <div className="hero-copy">
           <p className="eyebrow"><Sparkles size={15} /> Psicologia com escuta e presença</p>
-          <h1>Um espaço para você se entender com mais gentileza.</h1>
+          <h1 className="hero-title">Um espaço para <span className="hero-title__typed"><Typewriter words={['se entender.', 'cuidar de você.', 'viver com mais leveza.']} speed={64} delayBetweenWords={2200} cursor cursorChar="|" /></span></h1>
           <p className="hero-text">Psicoterapia baseada na Terapia Cognitivo-Comportamental para cuidar de você com acolhimento, clareza e caminhos possíveis.</p>
           <div className="hero-actions"><WhatsAppButton /><a className="text-link" href="#sobre">Conheça meu trabalho <ChevronDown size={17} /></a></div>
         </div>
