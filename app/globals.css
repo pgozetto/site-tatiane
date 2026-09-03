@@ -1,6 +1,6 @@
 @import 'tailwindcss';
 
-:root { --ink:#203e42; --ink-soft:#466166; --sage:#dce9df; --sage-deep:#5f8274; --cream:#f8f5ef; --sand:#ebe3d6; --coral:#c97d6d; --line:rgba(32,62,66,.14); }
+:root { --ink:#203e42; --ink-soft:#466166; --sage:#dce9df; --sage-deep:#5f8274; --cream:#f8f5ef; --sand:#ebe3d6; --coral:#c97d6d; --line:rgba(32,62,66,.14); --font-dm-sans:Arial,Helvetica,sans-serif; --font-playfair:Georgia,'Times New Roman',serif; }
 * { box-sizing:border-box; } html { scroll-behavior:auto; } body { margin:0; background:var(--cream); color:var(--ink); font-family:var(--font-dm-sans),Arial,sans-serif; } a { color:inherit; }
 .site-header { position:sticky; top:0; z-index:20; min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; padding:14px clamp(22px,5vw,78px); border-bottom:1px solid var(--line); background:rgba(248,245,239,.91); backdrop-filter:blur(14px); }
 .brand { display:inline-flex; align-items:center; gap:10px; text-decoration:none; min-width:max-content; }.brand-mark { width:38px; height:38px; display:grid; place-items:center; border-radius:50% 48% 50% 44%; background:var(--ink); color:var(--cream); font-family:var(--font-playfair),serif; font-size:21px; }.brand strong,.brand small { display:block; line-height:1.02; }.brand strong { font-family:var(--font-playfair),serif; font-size:20px; font-weight:600; }.brand small { margin-top:4px; color:var(--ink-soft); font-size:10px; letter-spacing:.16em; text-transform:uppercase; }
