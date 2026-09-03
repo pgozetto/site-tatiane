@@ -10,6 +10,7 @@ import {
   Video,
 } from 'lucide-react';
 import { Typewriter } from '@/components/ui/typewriter';
+import { ParallaxScrolling } from '@/components/ui/parallax-scrolling';
 
 const whatsappLink =
   'https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta.';
@@ -39,6 +40,7 @@ function WhatsAppButton({ compact = false }: { compact?: boolean }) {
 export default function Home() {
   return (
     <main>
+      <ParallaxScrolling />
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Tatiane Psicologia — início">
           <span className="brand-mark">T</span>
@@ -50,9 +52,9 @@ export default function Home() {
         <WhatsAppButton compact />
       </header>
 
-      <section className="hero" id="inicio">
-        <div className="hero-orb hero-orb--one" /><div className="hero-orb hero-orb--two" />
-        <div className="hero-copy">
+      <section className="hero" id="inicio" data-parallax-section="hero">
+        <div className="hero-orb hero-orb--one" data-parallax-hero-orb-one /><div className="hero-orb hero-orb--two" data-parallax-hero-orb-two />
+        <div className="hero-copy" data-parallax-hero-copy>
           <p className="eyebrow"><Sparkles size={15} /> Psicologia com escuta e presença</p>
           <h1 className="hero-title">Um espaço para <span className="hero-title__typed"><Typewriter words={['se entender.', 'cuidar de você.', 'viver com mais leveza.']} speed={64} delayBetweenWords={2200} cursor cursorChar="|" /></span></h1>
           <p className="hero-text">Psicoterapia baseada na Terapia Cognitivo-Comportamental para cuidar de você com acolhimento, clareza e caminhos possíveis.</p>
@@ -60,11 +62,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section about" id="sobre">
-        <div className="section-label">01 — Quem sou</div>
+      <section className="section about" id="sobre" data-parallax-section="about">
+        <div className="section-label" data-parallax-about-label>01 — Quem sou</div>
         <div className="about-grid">
-          <div className="about-copy"><h2>Oi, eu sou Tatiane.</h2><p className="lead">Psicóloga clínica e apaixonada por processos que ajudam pessoas a reconstruírem sua relação consigo mesmas e com o mundo.</p><p className="about-details">Meu trabalho é oferecer um encontro seguro, respeitoso e sem julgamentos. Na terapia, cada história ganha o seu tempo, seu contexto e a atenção que merece.</p><div className="credential"><span>CRP</span><strong>00/000000</strong><em>Substitua pelo registro profissional</em></div></div>
-          <div className="about-photo" role="img" aria-label="Espaço reservado para a foto da psicóloga Tatiane"><span>Foto da Tatiane</span><small>Insira aqui uma foto profissional em retrato</small></div>
+          <div className="about-copy" data-parallax-about-copy><h2>Oi, eu sou Tatiane.</h2><p className="lead">Psicóloga clínica e apaixonada por processos que ajudam pessoas a reconstruírem sua relação consigo mesmas e com o mundo.</p><p className="about-details">Meu trabalho é oferecer um encontro seguro, respeitoso e sem julgamentos. Na terapia, cada história ganha o seu tempo, seu contexto e a atenção que merece.</p><div className="credential"><span>CRP</span><strong>00/000000</strong><em>Substitua pelo registro profissional</em></div></div>
+          <div className="about-photo" data-parallax-about-photo role="img" aria-label="Espaço reservado para a foto da psicóloga Tatiane"><span>Foto da Tatiane</span><small>Insira aqui uma foto profissional em retrato</small></div>
         </div>
       </section>
 
@@ -91,9 +93,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact" id="contato">
-        <div><p className="eyebrow"><MessageCircle size={15} /> Vamos conversar?</p><h2>Seu processo pode começar com uma mensagem.</h2><p>Entre em contato pelo WhatsApp para tirar dúvidas e encontrar o melhor horário para você.</p></div>
-        <div className="contact-action"><WhatsAppButton /><small>WhatsApp: (00) 00000-0000</small></div>
+      <section className="contact" id="contato" data-parallax-section="contact">
+        <div data-parallax-contact-copy><p className="eyebrow"><MessageCircle size={15} /> Vamos conversar?</p><h2>Seu processo pode começar com uma mensagem.</h2><p>Entre em contato pelo WhatsApp para tirar dúvidas e encontrar o melhor horário para você.</p></div>
+        <div className="contact-action" data-parallax-contact-action><WhatsAppButton /><small>WhatsApp: (00) 00000-0000</small></div>
       </section>
 
       <footer className="footer">
