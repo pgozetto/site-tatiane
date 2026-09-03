@@ -3,7 +3,6 @@ import {
   AtSign,
   Check,
   ChevronDown,
-  HeartHandshake,
   MapPin,
   MessageCircle,
   Quote,
@@ -58,14 +57,13 @@ export default function Home() {
           <p className="hero-text">Psicoterapia baseada na Terapia Cognitivo-Comportamental para cuidar de você com acolhimento, clareza e caminhos possíveis.</p>
           <div className="hero-actions"><WhatsAppButton /><a className="text-link" href="#sobre">Conheça meu trabalho <ChevronDown size={17} /></a></div>
         </div>
-        <div className="hero-note"><HeartHandshake size={22} /><p>Você não precisa passar por tudo sozinha.</p></div>
       </section>
 
       <section className="section about" id="sobre">
         <div className="section-label">01 — Quem sou</div>
         <div className="about-grid">
-          <div><h2>Oi, eu sou Tatiane.</h2><p className="lead">Psicóloga clínica e apaixonada por processos que ajudam pessoas a reconstruírem sua relação consigo mesmas e com o mundo.</p></div>
-          <div className="about-card"><p>Meu trabalho é oferecer um encontro seguro, respeitoso e sem julgamentos. Na terapia, cada história ganha o seu tempo, seu contexto e a atenção que merece.</p><div className="credential"><span>CRP</span><strong>00/000000</strong><em>Substitua pelo registro profissional</em></div></div>
+          <div className="about-copy"><h2>Oi, eu sou Tatiane.</h2><p className="lead">Psicóloga clínica e apaixonada por processos que ajudam pessoas a reconstruírem sua relação consigo mesmas e com o mundo.</p><p className="about-details">Meu trabalho é oferecer um encontro seguro, respeitoso e sem julgamentos. Na terapia, cada história ganha o seu tempo, seu contexto e a atenção que merece.</p><div className="credential"><span>CRP</span><strong>00/000000</strong><em>Substitua pelo registro profissional</em></div></div>
+          <div className="about-photo" role="img" aria-label="Espaço reservado para a foto da psicóloga Tatiane"><span>Foto da Tatiane</span><small>Insira aqui uma foto profissional em retrato</small></div>
         </div>
       </section>
 
