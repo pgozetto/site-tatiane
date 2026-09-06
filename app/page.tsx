@@ -66,7 +66,7 @@ export default function Home() {
         <div className="hero-orb hero-orb--one" data-parallax-hero-orb-one /><div className="hero-orb hero-orb--two" data-parallax-hero-orb-two />
         <div className="hero-copy" data-parallax-hero-copy>
           <p className="eyebrow"><Sparkles size={15} /> Psicologia com escuta e presença</p>
-          <h1 className="hero-title">Um espaço para <span className="hero-title__typed"><Typewriter words={['se entender.', 'cuidar de você.', 'viver com mais leveza.']} speed={64} delayBetweenWords={2200} cursor cursorChar="|" /></span></h1>
+          <h1 className="hero-title">Um espaço para <span className="hero-title__typed"><Typewriter words={['se entender.', 'cuidar de você.', 'viver com mais\nleveza.']} speed={64} delayBetweenWords={2200} cursor cursorChar="|" /></span></h1>
           <p className="hero-text">Psicoterapia baseada na Terapia Cognitivo-Comportamental para cuidar de você com acolhimento, clareza e caminhos possíveis.</p>
           <div className="hero-actions"><WhatsAppButton /><a className="text-link" href="#sobre">Conheça meu trabalho <ChevronDown size={17} /></a></div>
         </div>
