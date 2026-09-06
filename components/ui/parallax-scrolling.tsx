@@ -68,6 +68,54 @@ export function ParallaxScrolling() {
           },
         );
       }
+
+      const revealBlocks = [
+        '.tcc-grid',
+        '.relationship-grid',
+        '.audience-intro',
+        '.testimonial-intro',
+        '.care-heading',
+        '.footer-quote',
+      ];
+
+      revealBlocks.forEach((selector) => {
+        const element = document.querySelector<HTMLElement>(selector);
+        if (!element) return;
+        gsap.fromTo(
+          element,
+          { y: 34, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            ease: 'power2.out',
+            scrollTrigger: { trigger: element, start: 'top 88%', once: true },
+          },
+        );
+      });
+
+      const revealCards = [
+        { selector: '.audience-card', trigger: '.audience-grid' },
+        { selector: '.testimonial-card', trigger: '.testimonial-grid' },
+        { selector: '.office-card, .online-card', trigger: '.care-grid' },
+      ];
+
+      revealCards.forEach(({ selector, trigger }) => {
+        const cards = gsap.utils.toArray<HTMLElement>(selector);
+        const triggerElement = document.querySelector<HTMLElement>(trigger);
+        if (!cards.length || !triggerElement) return;
+        gsap.fromTo(
+          cards,
+          { y: 40, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.62,
+            ease: 'power2.out',
+            stagger: 0.12,
+            scrollTrigger: { trigger: triggerElement, start: 'top 86%', once: true },
+          },
+        );
+      });
     });
 
     ScrollTrigger.refresh();
