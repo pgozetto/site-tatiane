@@ -15,14 +15,22 @@ const photos = [
 
 export function TatianeSlideshow() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [direction, setDirection] = useState<'next' | 'previous'>('next');
   const currentPhoto = photos[currentIndex];
 
-  const showPrevious = () => setCurrentIndex((index) => (index - 1 + photos.length) % photos.length);
-  const showNext = () => setCurrentIndex((index) => (index + 1) % photos.length);
+  const showPrevious = () => {
+    setDirection('previous');
+    setCurrentIndex((index) => (index - 1 + photos.length) % photos.length);
+  };
+
+  const showNext = () => {
+    setDirection('next');
+    setCurrentIndex((index) => (index + 1) % photos.length);
+  };
 
   return (
     <div className="about-photo about-gallery" data-parallax-about-photo aria-roledescription="carrossel" aria-label="Galeria de fotos da psicóloga Tatiane">
-      <img className="about-gallery__image" key={currentPhoto.src} src={currentPhoto.src} alt={currentPhoto.alt} />
+      <img className={`about-gallery__image about-gallery__image--${direction}`} key={currentPhoto.src} src={currentPhoto.src} alt={currentPhoto.alt} />
       <div className="about-gallery__controls">
         <button type="button" className="about-gallery__button" onClick={showPrevious} aria-label="Foto anterior">
           <ChevronLeft size={20} strokeWidth={1.8} />
