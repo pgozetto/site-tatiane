@@ -75,7 +75,6 @@ export function ParallaxScrolling() {
         '.audience-intro',
         '.testimonial-intro',
         '.care-heading',
-        '.footer-quote',
       ];
 
       revealBlocks.forEach((selector) => {

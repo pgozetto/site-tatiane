@@ -32,9 +32,9 @@ const relationshipPillars = [
 ];
 
 const testimonials = [
-  { text: '“Um atendimento muito acolhedor. Saio das sessões com mais clareza e ferramentas para o meu dia a dia.”', name: 'Nome do paciente', detail: 'Depoimento do Google' },
-  { text: '“A Tatiane criou um espaço seguro para eu falar do que sentia e aprender a lidar melhor com as situações.”', name: 'Nome do paciente', detail: 'Depoimento do Google' },
-  { text: '“Profissional atenta, ética e muito humana. O processo fez diferença na forma como eu me enxergo.”', name: 'Nome do paciente', detail: 'Depoimento do Google' },
+  { text: '“A terapia com a Tatiane me ajudou muito na hora de resolver um dos meus lutos mais recentes, desejo todo sucesso pra ela na vida!”', name: 'Roberto Magalhães', detail: 'Depoimento pelo Instagram' },
+  { text: '“Sensacional o trabalho da Tatiane! Sem dúvidas, uma das melhores profissionais do ramo da psicologia aqui em Piracicaba”', name: 'Andréa de Jesus Madureira', detail: 'Depoimento pelo Instagram' },
+  { text: '“A Dr. Tatiane me ajudou muito em um momento complicadíssimo da minha vida, se não fosse ela, minha vida estaria ainda uma bagunça”', name: 'Renata de Oliveira Silva', detail: 'Depoimento pelo WhatsApp' },
 ];
 
 function WhatsAppButton({ compact = false }: { compact?: boolean }) {
@@ -92,7 +92,7 @@ export default function Home() {
       </section>
 
       <section className="section testimonials" id="depoimentos">
-        <div className="testimonial-intro"><div className="section-label">Depoimentos</div><h2>Histórias de quem escolheu se cuidar.</h2><p>Este é o espaço para inserir os depoimentos recebidos no Google.</p></div>
+        <div className="testimonial-intro"><div className="section-label">Depoimentos</div><h2>Histórias de quem escolheu se cuidar.</h2><p>Palavras de pessoas que encontraram na terapia um espaço de cuidado e transformação.</p></div>
         <div className="testimonial-grid">{testimonials.map((testimonial) => <article className="testimonial-card" key={testimonial.text}><Quote size={28} strokeWidth={1.4} /><p>{testimonial.text}</p><footer><span className="avatar">{testimonial.name.charAt(0)}</span><span><strong>{testimonial.name}</strong><small>{testimonial.detail}</small></span></footer></article>)}</div>
       </section>
 
