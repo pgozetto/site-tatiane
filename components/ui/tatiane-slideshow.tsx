@@ -7,9 +7,7 @@ const photos = [
   { src: '/tatiane-galeria-01.png', alt: 'Tatiane em retrato profissional' },
   { src: '/tatiane-galeria-02.png', alt: 'Tatiane em um momento de leitura' },
   { src: '/tatiane-retrato-editorial.png', alt: 'Tatiane em retrato editorial' },
-  { src: '/tatiane-galeria-04.png', alt: 'Tatiane sorrindo em retrato profissional' },
   { src: '/tatiane-galeria-05.png', alt: 'Tatiane sentada em uma poltrona acolhedora' },
-  { src: '/tatiane-galeria-06.png', alt: 'Tatiane em retrato próximo e acolhedor' },
   { src: '/tatiane-galeria-07.png', alt: 'Tatiane em seu espaço de trabalho' },
 ];
 
