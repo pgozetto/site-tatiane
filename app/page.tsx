@@ -34,7 +34,7 @@ const relationshipPillars = [
 const testimonials = [
   { text: '“A terapia com a Tatiane me ajudou muito na hora de resolver um dos meus lutos mais recentes, desejo todo sucesso pra ela na vida!”', name: 'Roberto Magalhães', detail: 'Depoimento pelo Instagram' },
   { text: '“Sensacional o trabalho da Tatiane! Sem dúvidas, uma das melhores profissionais do ramo da psicologia aqui em Piracicaba”', name: 'Andréa de Jesus Madureira', detail: 'Depoimento pelo Instagram' },
-  { text: '“A Dr. Tatiane me ajudou muito em um momento complicadíssimo da minha vida, se não fosse ela, minha vida estaria ainda uma bagunça”', name: 'Renata de Oliveira Silva', detail: 'Depoimento pelo WhatsApp' },
+  { text: '“A Dra. Tatiane me ajudou muito em um momento complicadíssimo da minha vida, se não fosse ela, minha vida estaria ainda uma bagunça”', name: 'Renata de Oliveira Silva', detail: 'Depoimento pelo WhatsApp' },
 ];
 
 function WhatsAppButton({ compact = false }: { compact?: boolean }) {
